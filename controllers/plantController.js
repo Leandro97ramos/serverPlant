@@ -1,4 +1,4 @@
-const db = require('../config');
+const db = require('../config/db');
 
 const getPlants = async (req, res) => {
   const [plants] = await db.query('SELECT * FROM plants');
